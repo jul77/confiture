@@ -12,4 +12,3 @@ types = Type.create([{name: 'Fruits rouges'},{name: 'Exotiques'},{name: 'Saison'
 ingredients = Ingredient.create([{name:'Mangue', priceUnit:'3'},{name:'Banane', priceUnit:'1.5', type_id:'3'},{name:'Fraise', priceUnit:'2', type_id:'3'},{name:'Cerise', priceUnit:'0.3', type_id:'3'}])
 products = Product.create([{name:'Confiture de Mangue',description:'Confiture composée de mangues', price:'4.5'},{name:'Confiture de bananes',description:'Confiture composée de bananes', price:'4.5'}])
 ingredientproduct = Ingredientproduct.create([{ingredient_id:'1',product_id:'1', quantity:'10'},{ingredient_id:'2',product_id:'2', quantity:'17'}])
-
