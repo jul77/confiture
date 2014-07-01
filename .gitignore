@@ -11,6 +11,8 @@ capybara-*.html
 /public/system
 /coverage/
 /spec/tmp
+/config/database.yml
+/app/assets/stylesheets/.sass-cache/
 **.orig
 rerun.txt
 pickle-email-*.html
@@ -18,7 +20,7 @@ pickle-email-*.html
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
 config/secrets.yml
-config/database.yml
+
 
 ## Environment normalisation:
 /.bundle
