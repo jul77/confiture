@@ -1,4 +1,4 @@
-/* line 1, style.scss */
+/* line 3, style.scss */
 * {
   margin: 0;
   padding: 0;
@@ -10,48 +10,48 @@
   text-decoration: none;
 }
 
-/* line 12, style.scss */
+/* line 14, style.scss */
 body {
   background-color: #67C2D4;
 }
 
-/* line 15, style.scss */
+/* line 17, style.scss */
 .header {
   width: 100%;
   height: 50px;
   background: #fff;
 }
-/* line 19, style.scss */
+/* line 21, style.scss */
 .header .header_content {
   width: 100%;
   margin: 0 auto;
   height: auto;
 }
-/* line 23, style.scss */
+/* line 25, style.scss */
 .header .header_content .button_menu {
   float: left;
   width: 50px;
   cursor: pointer;
 }
-/* line 27, style.scss */
+/* line 29, style.scss */
 .header .header_content .button_menu img {
   width: 100%;
   height: 100%;
 }
-/* line 32, style.scss */
+/* line 34, style.scss */
 .header .header_content .title_header {
   font-size: 1.8em;
   color: #B7B6B4;
   float: left;
 }
-/* line 37, style.scss */
+/* line 39, style.scss */
 .header .header_content .layer_account {
   width: 20%;
   position: absolute;
   top: 0;
   right: 0;
 }
-/* line 42, style.scss */
+/* line 44, style.scss */
 .header .header_content .layer_account .button_account {
   color: #fff;
   background: #E85657;
@@ -60,11 +60,11 @@ body {
   text-align: center;
   cursor: pointer;
 }
-/* line 49, style.scss */
+/* line 51, style.scss */
 .header .header_content .layer_account .button_account:hover {
   background: #cc4c4d;
 }
-/* line 53, style.scss */
+/* line 55, style.scss */
 .header .header_content .layer_account .invisible_layout {
   display: none;
   width: 100%;
@@ -74,29 +74,29 @@ body {
   background: #fff;
   color: #DDC8B5;
 }
-/* line 61, style.scss */
+/* line 63, style.scss */
 .header .header_content .layer_account .invisible_layout .content_account {
   width: 80%;
   display: none;
   margin: 0 auto;
   padding: 3% 0 15% 0;
 }
-/* line 66, style.scss */
+/* line 69, style.scss */
 .header .header_content .layer_account .invisible_layout .content_account .subtitle {
   font-size: 1.5em;
   color: #E65753;
 }
-/* line 70, style.scss */
+/* line 73, style.scss */
 .header .header_content .layer_account .invisible_layout .content_account label {
   margin-top: 11%;
   font-size: 0.8em;
 }
-/* line 74, style.scss */
+/* line 77, style.scss */
 .header .header_content .layer_account .invisible_layout .content_account label, .header .header_content .layer_account .invisible_layout .content_account input {
   display: block;
   color: #D5BBA4;
 }
-/* line 79, style.scss */
+/* line 82, style.scss */
 .header .header_content .layer_account .invisible_layout .content_account input {
   width: 100%;
   border: 2px solid #D5BBA4;
@@ -104,7 +104,7 @@ body {
   padding: 2%;
   outline: none;
 }
-/* line 85, style.scss */
+/* line 88, style.scss */
 .header .header_content .layer_account .invisible_layout .content_account input:focus {
   border: 2px solid #E75854;
   color: #E75854;
