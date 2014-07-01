@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 	$('.subscribe_button').on('click', function() {
 		$('.content_account').animate({top: '-100%'},500);
-		$('.invisible_layout').animate({height: '470px'}, 500);
-		$('.content_subscribe').animate({top: '-74%'},500);
+		$('.invisible_layout').animate({height: '555px'}, 500);
+		$('.content_subscribe').animate({top: '-62%'},500);
 	})
 		
 	$('.account_button').on('click', function() { 
