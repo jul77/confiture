@@ -41,4 +41,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 # GEM confiture
 gem 'mysql2'
 gem 'bcrypt-ruby'
+gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
