@@ -6,7 +6,6 @@
 		<h1 class="title_header">Confi Cool Store </h1>
 		<div class="layer_account">
 			<h2 class="button_account">Mon compte</h2>
- <!-- -->
 			<div class="invisible_layout">
 				<% if customer_signed_in? %>
 					Yoyo !!
@@ -41,7 +40,7 @@
 						<%= f.password_field :password_confirmation %></div>
 
 
-						<div><%= f.submit "S'inscrire", :class => 'submit_button' %></div>
+						<div><%= f.submit "Valider", :class => 'submit_button' %></div>
 					<% end %>
 					<h2 class="subtitle account_button">Connexion / Retour</h2>
 				</div>
@@ -51,5 +50,12 @@
 	</div>
 </header>
 <div class="main_content">
-
+	<ul class="liste_produits">
+		<li class="item_list">
+			<%= image_tag("confiture-banane.jpg", :alt => "porduit confiture") %>
+			<p>Pot de confiture banane</p>
+			<p>5,90€</p>
+		</li>
+		<li class="item_list"><%= image_tag("confiture-banane.jpg", :alt => "porduit confiture") %></li>
+	</ul>
 </div>
