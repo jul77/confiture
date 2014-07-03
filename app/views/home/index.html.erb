@@ -47,8 +47,7 @@
 						<%= label_tag(:password, "CONFIRMER MOT DE PASSE") %>
 						<%= f.password_field :password_confirmation %></div>
 
-
-						<div><%= f.submit "S'inscrire", :class => 'submit_button' %></div>
+						<div><%= f.submit "Valider", :class => 'submit_button' %></div>
 					<% end %>
 					<h2 class="subtitle account_button">Connexion / Retour</h2>
 				</div>
@@ -58,5 +57,12 @@
 	</div>
 </header>
 <div class="main_content">
-
+	<ul class="liste_produits">
+		<% @products.each do |f| %>
+			<li class="item_list">
+				<%= image_tag("confiture-babane.jpg", :alt => "Pot de banane") %>
+				<%= @products.name %>
+			</li>
+		<% end %>
+	</ul>
 </div>
