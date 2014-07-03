@@ -1,4 +1,4 @@
 class Row < ActiveRecord::Base
-  has_one :order
-  has_one :product
+  belongs_to :order
+  belongs_to :product
 end

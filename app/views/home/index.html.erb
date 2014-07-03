@@ -6,45 +6,44 @@
 		<h1 class="title_header">Confi Cool Store </h1>
 		<div class="layer_account">
 			<h2 class="button_account">Mon compte</h2>
-
+			<% if customer_signed_in? %>
+			<% else %>
 			<div class="invisible_layout">
 				<div class="content_account">
-					<%= form_tag("/connexion", method: "get") do %>
+					<%= form_for(Customer.new, :as => :customer, :url => session_path(:customer)) do |f| %>
 						<h2 class="subtitle">Se connecter</h2>
 						<%= label_tag(:mail, "EMAIL") %>
-						<%= text_field_tag(:mail) %>
+						<%= f.email_field :email, :autofocus => true %>
 
 						<%= label_tag(:password, "MOT DE PASSE") %>
-						<%= password_field_tag(:password) %>
+						<%= f.password_field :password %>
 
-						<%= submit_tag("Valider") %>
+						<div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+
+						<div><%= f.submit "Se connecter" %></div>
 					<% end %>
 					<h2 class="subtitle subscribe_button">Inscription</h2>
 				</div>
 
  				<div class='content_subscribe'>
-					<%= form_tag("inscription", method: "get") do %>
+					<%= form_for(Customer.new, :as => :customer, :url => registration_path(:customer)) do |f| %>
 						<h2 class="subtitle">S'inscrire</h2>
-						<%= label_tag(:prenom, "PRÉNOM") %>
-						<%= text_field_tag(:prenom) %>
-
-						<%= label_tag(:nom, "NOM") %>
-						<%= text_field_tag(:nom) %>
+						<%= label_tag(:email, 'EMAIL') %>
+						<%= f.email_field :email, :autofocus => true %></div>
 
 						<%= label_tag(:pasword, "MOT DE PASSE") %>
-						<%= password_field_tag(:password) %>
+						<%= f.password_field :password %></div>
 
-						<%= label_tag(:password2, "CONFIRMER MOT DE PASSE") %>
-						<%= password_field_tag(:password2) %>
+						<%= label_tag(:password, "CONFIRMER MOT DE PASSE") %>
+						<%= f.password_field :password_confirmation %></div>
 
-						<%= label_tag(:email, 'EMAIL') %>
-						<%= text_field_tag(:mail) %>
 
-						<%= submit_tag("Valider") %>
+						<div><%= f.submit "S'inscrire" %></div>
 					<% end %>
 					<h2 class="subtitle account_button">Connexion / Retour</h2>
 				</div>
 			</div>
+			<% end %>
 		</div>
 	</div>
 </header>
