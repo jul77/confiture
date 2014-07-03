@@ -39,6 +39,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 
 # GEM confiture
+gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'mysql2'
 gem 'bcrypt-ruby'
 gem 'devise'

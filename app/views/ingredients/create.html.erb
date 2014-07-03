@@ -5,14 +5,13 @@
 		</div>
 		<h1 class="title_header">Confi Cool Store </h1>
 		<% if admin_user_signed_in? %>
-			<div class="nav">
-				<ul>
-					<li id="first"><%= link_to 'Gestion des ingredients', ingredients_path() %></li>
-					<li>Gestion des produits</li>
-					<li>Gestion des clients</li>
-					<li id="last">Gestion des Marklors</li>
-				</ul>
-			</div>
+			<h1><abbr title="you see this menu because you're logged as admin">Gestionnaire :</abbr></h1>
+			<ul>
+				<li><%= link_to 'Gestion des ingredients', ingredients_path() %></li>
+				<li>Gestion des produits</li>
+				<li>Gestion des clients</li>
+				<li>Gestion des Marklors</li>
+			</ul>
 		<% end %>
 		<div class="layer_account">
 			<h2 class="button_account">Mon compte</h2>
@@ -40,15 +39,16 @@
 					<%= form_for(Customer.new, :as => :customer, :url => registration_path(:customer)) do |f| %>
 						<h2 class="subtitle">S'inscrire</h2>
 						<%= label_tag(:email, 'EMAIL') %>
-						<%= f.email_field :email, :autofocus => true %>
+						<%= f.email_field :email, :autofocus => true %></div>
 
 						<%= label_tag(:pasword, "MOT DE PASSE") %>
-						<%= f.password_field :password %>
+						<%= f.password_field :password %></div>
 
 						<%= label_tag(:password, "CONFIRMER MOT DE PASSE") %>
-						<%= f.password_field :password_confirmation %>
+						<%= f.password_field :password_confirmation %></div>
 
-						<div><%= f.submit "Valider", :class => 'submit_button' %></div>
+
+						<div><%= f.submit "S'inscrire", :class => 'submit_button' %></div>
 					<% end %>
 					<h2 class="subtitle account_button">Connexion / Retour</h2>
 				</div>
@@ -58,15 +58,8 @@
 	</div>
 </header>
 <div class="main_content">
-	<ul class="liste_produits">
-		<% produits = Product.all %>
-		<% produits.each do |f| %>
-			<li class="item_list">
-				<%= image_tag("confiture-babane.jpg", :alt => "Pot de banane") %>
-				<p><%= f.name %></p>
-				<p><%= f.description %></p>
-				<p><%= f.price %> €</p>
-			</li>
-		<% end %>
-	</ul>
+	<h2>Nouvel ingrédient créé</h2>
+	<span>Nom : <%= @ingredient.name %></span>
+	<span>Prix : <%= @ingredient.priceUnit %></span>
+	<li><%= link_to 'Ajout d\'un nouvel ingredient', ingredients_path() %></li>
 </div>

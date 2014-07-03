@@ -8,6 +8,7 @@
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
+  color:#73726F;
 }
 
 /* line 14, style.scss */
@@ -39,10 +40,46 @@ body {
   height: 100%;
 }
 /* line 34, style.scss */
+.header .header_content .nav {
+  color: #B7B6B4;
+  line-height: 50px;
+  width:100%;
+}
+
+.nav #first {
+  border-left:1px solid #B7B6B4; 
+}
+
+.header .header_content .nav li {
+  list-style: none;
+  float:left;
+  border-right:1px solid #B7B6B4;
+  border-top:0px;
+  border-bottom:0px;
+  padding-left:3px;
+  padding-right:3px;
+  width:15%;
+  text-align: center;
+}
+
+.header .header_content .nav a,.header .header_content .nav a:visited {
+  color: #B7B6B4;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.header .header_content .nav a:hover {
+  color: #73726F;
+  font-size: 1.2em;
+}
+
 .header .header_content .title_header {
   font-size: 1.8em;
-  color: #B7B6B4;
+  color: #73726F;
   float: left;
+  line-height: 50px;
+  margin-right:1%;
+  padding-left:1%;
 }
 /* line 39, style.scss */
 .header .header_content .layer_account {
@@ -153,13 +190,17 @@ body {
 
 /* line 137, style.scss */
 .liste_produits {
-  background: #fff;
-  width: 77%;
+  background: #FEF0E3;
+  border:2px solid #E85657;
+  width: 90%;
   margin: 0 auto;
-  margin-top: 10%;
+  padding: 2%;
+  margin-top: 5%;
+  bottom: 5%;
 }
 /* line 142, style.scss */
 .liste_produits .item_list {
+  background: #fff;
   list-style-type: none;
   display: inline-block;
   border: 1px solid #E0E2C5;
