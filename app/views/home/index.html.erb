@@ -4,6 +4,15 @@
 			<%= image_tag("menu.png", :alt => "bouton menu") %>
 		</div>
 		<h1 class="title_header">Confi Cool Store </h1>
+		<% if admin_user_signed_in? %>
+			<h1><abbr title="you see this menu because you're logged as admin">Gestionnaire :</abbr></h1>
+			<ul>
+				<li>Gestion des ingredients</li>
+				<li>Gestion des produits</li>
+				<li>Gestion des clients</li>
+				<li>Gestion des Marklors</li>
+			</ul>
+		<% end %>
 		<div class="layer_account">
 			<h2 class="button_account">Mon compte</h2>
 			<div class="invisible_layout">
