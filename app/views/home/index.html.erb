@@ -6,9 +6,14 @@
 		<h1 class="title_header">Confi Cool Store </h1>
 		<div class="layer_account">
 			<h2 class="button_account">Mon compte</h2>
-			<% if customer_signed_in? %>
-			<% else %>
+ <!-- -->
 			<div class="invisible_layout">
+				<% if customer_signed_in? %>
+					Yoyo !!
+					 <% user = current_customer %>
+					 <%= user.email %>
+					 <%= button_to "Déconnexion", destroy_session_path(:customer), :method => :delete, :class => 'submit_button' %>
+				<% else %>
 				<div class="content_account">
 					<%= form_for(Customer.new, :as => :customer, :url => session_path(:customer)) do |f| %>
 						<h2 class="subtitle">Se connecter</h2>
@@ -18,9 +23,7 @@
 						<%= label_tag(:password, "MOT DE PASSE") %>
 						<%= f.password_field :password %>
 
-						<div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-
-						<div><%= f.submit "Se connecter" %></div>
+						<div><%= f.submit "Valider", :class => 'submit_button' %></div>
 					<% end %>
 					<h2 class="subtitle subscribe_button">Inscription</h2>
 				</div>
@@ -38,12 +41,12 @@
 						<%= f.password_field :password_confirmation %></div>
 
 
-						<div><%= f.submit "S'inscrire" %></div>
+						<div><%= f.submit "S'inscrire", :class => 'submit_button' %></div>
 					<% end %>
 					<h2 class="subtitle account_button">Connexion / Retour</h2>
 				</div>
-			</div>
 			<% end %>
+			</div>
 		</div>
 	</div>
 </header>

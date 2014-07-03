@@ -103,7 +103,7 @@ body {
 						}
 					}
 
-					input[type="submit"]{
+					.submit_button{
 						color: #fff;
 						background: #E75854;
 						text-align: center;
@@ -128,4 +128,8 @@ body {
 
 		}
 	}
+}
+
+.contentSignIn {
+	background: #fff;
 }

@@ -124,7 +124,7 @@ body {
   color: #E75854;
 }
 /* line 106, style.scss */
-.header .header_content .layer_account .invisible_layout .content_account input[type="submit"], .header .header_content .layer_account .invisible_layout .content_subscribe input[type="submit"] {
+.header .header_content .layer_account .invisible_layout .content_account .submit_button, .header .header_content .layer_account .invisible_layout .content_subscribe .submit_button {
   color: #fff;
   background: #E75854;
   text-align: center;
@@ -137,11 +137,16 @@ body {
   cursor: pointer;
 }
 /* line 117, style.scss */
-.header .header_content .layer_account .invisible_layout .content_account input[type="submit"] a:hover, .header .header_content .layer_account .invisible_layout .content_subscribe input[type="submit"] a:hover {
+.header .header_content .layer_account .invisible_layout .content_account .submit_button a:hover, .header .header_content .layer_account .invisible_layout .content_subscribe .submit_button a:hover {
   background: #E85657;
 }
 /* line 123, style.scss */
 .header .header_content .layer_account .invisible_layout .content_account {
   right: 0;
   top: 0;
+}
+
+/* line 133, style.scss */
+.contentSignIn {
+  background: #fff;
 }
