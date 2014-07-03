@@ -59,10 +59,13 @@
 </header>
 <div class="main_content">
 	<ul class="liste_produits">
-		<% @products.each do |f| %>
+		<% produits = Product.all %>
+		<% produits.each do |f| %>
 			<li class="item_list">
 				<%= image_tag("confiture-babane.jpg", :alt => "Pot de banane") %>
-				<%= @products.name %>
+				<p><%= f.name %></p>
+				<p><%= f.description %></p>
+				<p><%= f.price %> €</p>
 			</li>
 		<% end %>
 	</ul>
