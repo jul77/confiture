@@ -104,16 +104,16 @@ body {
 					}
 
 					.submit_button{
-						color: #fff;
-						background: #E75854;
-						text-align: center;
-						border: #E75854;
-						width: 100%;
-						border: 2px solid #E75854;
-						font-size: 1.5em;
-						padding: 2%;
-						margin-top: 12%;
-						cursor: pointer;
+						color: #fff !important;
+						background: #E75854 !important;
+						text-align: center !important;
+						border: #E75854 !important;
+						width: 100% !important;
+						border: 2px solid #E75854 !important;
+						font-size: 1.5em !important;
+						padding: 2% !important;
+						margin-top: 12% !important;
+						cursor: pointer !important;
 						a:hover {
 							background: #E85657;
 						}
@@ -132,4 +132,27 @@ body {
 
 .contentSignIn {
 	background: #fff;
+}
+
+.liste_produits {
+	background: #fff;
+	width: 77%;
+	margin: 0 auto;
+	margin-top: 10%;
+	.item_list {
+		list-style-type: none; 
+		display: inline-block;
+		border: 1px solid #E0E2C5;
+		padding: 1%;
+		margin: 0 4%;
+		text-align: center;
+		width: 20%;
+		&:hover {
+			border-color: #E75854;
+		}
+		img {
+			width: 68%;
+			height: 10%;
+		}
+	}
 }
