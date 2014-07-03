@@ -7,7 +7,7 @@
 		<% if admin_user_signed_in? %>
 			<h1><abbr title="you see this menu because you're logged as admin">Gestionnaire :</abbr></h1>
 			<ul>
-				<li><%= link_to 'Gestion des ingredients', ingredient_path(@ingredient) %></li>
+				<li><%= link_to 'Gestion des ingredients', ingredients_path() %></li>
 				<li>Gestion des produits</li>
 				<li>Gestion des clients</li>
 				<li>Gestion des Marklors</li>
