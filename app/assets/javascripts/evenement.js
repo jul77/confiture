@@ -11,13 +11,13 @@ $(document).ready(function(){
 
 	$('.subscribe_button').on('click', function() {
 		$('.content_account').animate({top: '-100%'},500);
-		$('.invisible_layout').animate({height: '555px'}, 500);
-		$('.content_subscribe').animate({top: '-62%'},500);
+		$('.invisible_layout').animate({height: '420px'}, 500);
+		$('.content_subscribe').animate({top: '-66%'},500);
 	})
 		
 	$('.account_button').on('click', function() { 
 		$('.content_subscribe').animate({top: 0},500);
-		$('.invisible_layout').animate({height: '320px'}, 500);
+		$('.invisible_layout').animate({height: '300px'}, 500);
 		$('.content_account').animate({top: 0},500);
 	})
 
