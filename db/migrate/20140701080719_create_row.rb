@@ -1,4 +1,4 @@
-class CreateRows < ActiveRecord::Migration
+class CreateRow < ActiveRecord::Migration
   def change
     create_table :rows do |t|
  	  t.integer :order_id
