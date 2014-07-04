@@ -1,4 +1,4 @@
-class AddDeviseToCustomers < ActiveRecord::Migration
+class AddPhotoToProducts < ActiveRecord::Migration
   def self.up
     add_attachment :users, :avatar
   end

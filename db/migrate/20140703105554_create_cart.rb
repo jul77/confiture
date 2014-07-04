@@ -1,4 +1,4 @@
-class Cart < ActiveRecord::Migration
+class CreateCart < ActiveRecord::Migration
   def change
     create_table :carts do |t|
     	t.string :customer_id
