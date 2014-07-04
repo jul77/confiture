@@ -1,0 +1,13 @@
+<div class="main_content liste_produits">
+	<h2>Nouveau produit créé</h2>
+	<ul class="item_list">
+		<li>Nom : <%= @product.name %></li>
+		<li>Prix : <%= @product.price %></li>
+		<li>Description : <%= @product.description %></li>
+	</ul>
+	<div class="foot_link_content">
+		<%= link_to 'Ajout d\'un nouveau produit', new_product_url() %>
+		<br />
+		<%= link_to 'Retour à la liste des produits', products_path() %>
+	</div>
+</div>

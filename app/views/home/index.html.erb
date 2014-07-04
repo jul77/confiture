@@ -1,7 +1,6 @@
 <div class="main_content">
 	<ul class="liste_produits">
-		<% produits = Product.all %>
-		<% produits.each do |f| %>
+		<% @products.each do |f| %>
 			<li class="item_list">
 				<%= image_tag("confiture-babane.jpg", :alt => "Pot de banane") %>
 				<p><%= f.name %></p>

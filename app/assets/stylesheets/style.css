@@ -219,3 +219,8 @@ body {
   width: 68%;
   height: 10%;
 }
+
+.foot_link_content > a{
+  float:right;
+  color:#CC4C4D !important;
+}

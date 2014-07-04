@@ -1,6 +1,6 @@
 class IngredientsController < ApplicationController
   def index
-    @ingredients = Ingredient.all()
+    @ingredients = Ingredient.all
   end
 
   def new
@@ -15,6 +15,6 @@ class IngredientsController < ApplicationController
   private
   
   def ingredient_params
-    params.require(:ingredient).permit(:name, :priceUnit)
+    params.require(:ingredient).permit(:name, :priceUnit, :type_id)
   end
 end

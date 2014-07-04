@@ -1,0 +1,22 @@
+<div class="main_content liste_produits">
+	<%= form_for(@product) do |f| %>
+		<h2 class="subtitle">Création d'un produit</h2>
+		<%= label_tag(:name, 'Label') %>
+		<%= f.text_field :name, :autofocus => true %>
+
+		<%= label_tag(:price, "Prix") %>
+		<%= f.text_field :price %>
+
+		<%= label_tag(:description, "Description") %>
+		<%= f.text_field :description %>
+		<%= f.fields_for :ingredientproducts do |builder| %>
+			<%= label_tag(:ingredient_id, "Ingredients") %>
+			<%= builder.collection_select :ingredient_id, Ingredient.order(:name),:id,:name, include_blank: true  %>
+
+			<%= label_tag(:quantity, "Ingredient Quantité ?") %>
+			<%= builder.text_field :quantity %>
+	    <% end %>
+
+		<div><%= f.submit "Nouveau produit", :class => 'submit_button' %></div>
+	<% end %>
+</div>

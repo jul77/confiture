@@ -1,6 +1,12 @@
-<div class="main_content">
+<div class="main_content liste_produits">
 	<h2>Nouvel ingrédient créé</h2>
-	<span>Nom : <%= @ingredient.name %></span>
-	<span>Prix : <%= @ingredient.priceUnit %></span>
-	<li><%= link_to 'Ajout d\'un nouvel ingredient', ingredients_path() %></li>
+	<ul class="item_list">
+		<li>Nom : <%= @ingredient.name %></li>
+		<li>Prix : <%= @ingredient.priceUnit %></li>
+	</ul>
+	<div class="foot_link_content">
+		<%= link_to 'Ajout d\'un nouvel ingredient', new_ingredient_url() %>
+		<br />
+		<%= link_to 'Retour à la liste des ingredients', ingredients_path() %>
+	</div>
 </div>

@@ -1,10 +1,10 @@
-<div class="main_content">
-	<h2>Liste des ingrédients :</h2>
-	<% @ingredients.each do |i| %>
-		<ul>
-			<li><% i.name %></li>
-			<li><% i.priceUnit %></li>
-		</ul>
-	<% end %>
-	<%= link_to 'Nouvel ingredient', new_ingredient_url()  %>
+<div class="main_content liste_produits">
+		<h2>Liste des ingrédients :</h2>
+		<% @ingredients.each do |i| %>
+			<ul class="item_list">
+				<li>Nom : <%= i.name %></li>
+				<li>Prix : <%= i.priceUnit %></li>
+			</ul>
+		<% end %>
+	<div class="foot_link_content"><%= link_to 'Nouvel ingredient', new_ingredient_url()  %></div>
 </div>

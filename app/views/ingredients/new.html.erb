@@ -1,11 +1,14 @@
-<div class="main_content">
+<div class="main_content liste_produits">
 	<%= form_for(@ingredient) do |f| %>
-		<h2 class="subtitle">S'inscrire</h2>
+		<h2 class="subtitle">Création d'un ingrédient</h2>
 		<%= label_tag(:name, 'Label') %>
-		<%= f.text_field :name, :autofocus => true %></div>
+		<%= f.text_field :name, :autofocus => true %>
 
 		<%= label_tag(:priceUnit, "Prix") %>
-		<%= f.text_field :priceUnit %></div>
+		<%= f.text_field :priceUnit %>
+
+		<%= label_tag(:type, "Type") %>
+		<%= f.collection_select :type_id, Type.order(:name),:id,:name, include_blank: true  %>
 
 		<div><%= f.submit "Nouvel ingredient", :class => 'submit_button' %></div>
 	<% end %>

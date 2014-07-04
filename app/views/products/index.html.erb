@@ -1,0 +1,11 @@
+<div class="main_content liste_produits">
+		<h2>Liste des produits :</h2>
+		<% @products.each do |p| %>
+			<ul class="item_list">
+				<li>Nom : <%= p.name %></li>
+				<li>Description : <%= p.description %></li>
+				<li>Prix : <%= p.price %></li>
+			</ul>
+		<% end %>
+	<div class="foot_link_content"><%= link_to 'Nouveau produit', new_product_url()  %></div>
+</div>
