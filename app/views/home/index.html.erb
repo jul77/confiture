@@ -7,10 +7,10 @@
 		<% if admin_user_signed_in? %>
 			<div class="nav">
 				<ul>
-					<li id="first"><%= link_to 'Gestion des ingredients', ingredients_path() %></li>
-					<li>Gestion des produits</li>
-					<li>Gestion des clients</li>
-					<li id="last">Gestion des Marklors</li>
+					<li id="first"><%= link_to 'Gestion des ingredients', '/admin'+ingredients_path() %></li>
+					<li><a href="/admin/products">Gestion des produits</a></li>
+					<li><a href="/admin/customers">Gestion des clients</a></li>
+					<li id="last"><a href="/admin/orders">Gestion des achats</a></li>
 				</ul>
 			</div>
 		<% end %>
@@ -66,6 +66,7 @@
 				<p><%= f.name %></p>
 				<p><%= f.description %></p>
 				<p><%= f.price %> €</p>
+				<a>Ajouter au panier</a>
 			</li>
 		<% end %>
 	</ul>
