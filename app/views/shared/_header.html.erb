@@ -1,0 +1,19 @@
+<header class="header">
+	<div class="header_content">
+		<div class="button_menu">
+			<%= image_tag("menu.png", :alt => "bouton menu") %>
+		</div>
+		<h1 class="title_header">Confi Cool Store </h1>
+		<% if admin_user_signed_in? %>
+			<div class="nav">
+				<ul>
+					<li id="first"><%= link_to 'Gestion des ingredients', ingredients_path() %></li>
+					<li>Gestion des produits</li>
+					<li>Gestion des clients</li>
+					<li id="last">Gestion des Marklors</li>
+				</ul>
+			</div>
+		<% end %>
+		<%= render "shared/menu" %>
+	</div>
+</header>
